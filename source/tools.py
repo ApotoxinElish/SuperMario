@@ -58,6 +58,5 @@ def get_image(sheet, x, y, width, height, colorkey, scale):
     # 0,0 代表画到哪个位置, x,y,w,h 代表sheet里哪个区域要取出来
     image.blit(sheet, (0, 0), (x, y, width, height))
     image.set_colorkey(colorkey)
-    image = pygame.transform.scale(
-        image, (int(width * scale), int(height * scale)))
+    image = pygame.transform.scale(image, (int(width * scale), int(height * scale)))
     return image
